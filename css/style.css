@@ -1,0 +1,102 @@
+/* variables o estilos para utilizar, deja el miedo mierda */
+:root{
+    --green: #C5F82A;
+    --white: #FFFFFF;
+    --grey: #333333;
+    --dark-grey: #1F1F1F;
+    --of-black: #141414;
+    --font: 'Inter', sans-serif;
+}
+
+/* reseteo para los botones */
+button{
+    background: none;
+    border: none;
+    outline: none;
+}
+
+/* estilos para el sitio web */
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: var(--font);
+    background-color: var(--of-black);
+}
+
+.principal{
+    margin: 16px;
+}
+
+.card{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark-grey);
+    border-radius: 10px;
+}
+
+@media(min-width: 1024px) {
+    .card{
+        padding: 25px 40px;
+    }
+    
+}
+
+.card-figure{
+    align-self: center;
+    width: 88px;
+}
+
+.card-figure img {
+    border-radius: 88px;
+}
+
+.card-textos{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.card-textos-heading{
+    margin-bottom: 10px;
+    font: 700 23px var(--font);
+    text-align: center;
+    color: var(--white);
+}
+
+.card-textos-paragraph{
+    font-weight: bold;
+    color: var(--green);
+    text-align: center;
+}
+
+.card-paragraph{
+    margin-bottom: 25px;
+    text-align: center;
+    color: var(--white);
+}
+
+/* area para los botones, se utiliza flexbox para los botones. */
+.card-btns{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn{
+    padding: 12px 0;
+    font-weight: bold;
+    color: var(--white);
+    border-radius: 8px;
+    background-color: var(--grey);
+    transition: 1s ease all;
+}
+
+.btn:hover{
+    color: var(--grey);
+    cursor: pointer;
+    background-color: var(--green);
+}
